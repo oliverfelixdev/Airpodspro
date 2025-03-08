@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "SD-R";
+  font-family: "SDs-Regular";
 }
 
 :root {
@@ -13,13 +13,18 @@
 }
 
 @font-face {
-  font-family: "SD-B";
-  src: url("../src/assets/fonts/sf-pro-display_bold.woff2");
+  font-family: "SDs-Bold";
+  src: url("../src/assets/fonts/sfprodisplaybold.woff2");
 }
 
 @font-face {
-  font-family: "SD-R";
-  src: url("../src/assets/fonts/sf-pro-display_regular.woff2");
+  font-family: "SDs-Regular";
+  src: url("../src/assets/fonts/sfprodisplayregular.woff2");
+}
+
+@font-face {
+  font-family: "SRnd-Light";
+  src: url("../src/assets/fonts/sfproroundedlight.otf");
 }
 
 html,
@@ -37,36 +42,34 @@ main {
 .navbar {
   width: 100%;
   overflow: hidden;
-}
-
-.navbar-wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 3rem;
-  background-color: rgb(34, 4, 68);
-}
-
-.navbar-wrapper .primary {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.navbar-wrapper .primary .logo svg {
-  margin-top: 0.5rem;
-  transform: scale(1.5);
-}
-
-.navbar-wrapper .secondary {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  gap: 0.5rem;
   flex-direction: column;
+  border-bottom: 1px solid #fff;
 }
-.navbar-wrapper .secondary h1 {
-  font-size: 1.7rem;
+
+.navbar-primary {
+  width: 100%;
+}
+
+.nav-link-container /* unorder list {UL} */ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-family: "SRnd-Light";
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: var(--color-light);
+}
+
+.navbar-secondary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
