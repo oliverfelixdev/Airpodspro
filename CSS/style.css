@@ -46,11 +46,12 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #ffffff33;
 }
 
 .navbar-primary {
   width: 100%;
+  padding: 0.5rem 0;
 }
 
 .nav-link-container /* unorder list {UL} */ {
@@ -60,11 +61,18 @@ main {
   gap: 2rem;
 }
 
+.nav-link-container .apple-logo {
+  font-size: 1.4rem;
+  color: var(--color-light);
+  line-height: 1;
+}
+
 .nav-link {
   font-family: "SRnd-Light";
   font-weight: 100;
   font-size: 0.8rem;
   color: var(--color-light);
+  letter-spacing: 0.5px;
 }
 
 .navbar-secondary {
@@ -72,4 +80,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 75%;
+  padding: 1rem 0rem;
+}
+
+.navbar-secondary .airpods-pro-title {
+  font-size: 1.5rem;
+  letter-spacing: 0.8px;
 }
