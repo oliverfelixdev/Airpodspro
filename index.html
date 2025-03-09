@@ -10,13 +10,16 @@
   </head>
   <body>
     <main>
-      <header>
+      <!--       <header>
         <nav class="navbar">
           <div class="navbar-primary">
             <ul class="nav-link-container">
               <li class="nav-icon">
                 <a href="index.html" class="icon">
-                  <ion-icon name="logo-apple" class="apple-logo"></ion-icon>
+                  <ion-icon
+                    name="logo-apple"
+                    class="apple-logo icon"
+                  ></ion-icon>
                 </a>
               </li>
               <li><a href="#" class="nav-link">Store</a></li>
@@ -51,14 +54,23 @@
             </ul>
           </div>
         </nav>
-        <!-- <nav class="sidebar"></nav> -->
-      </header>
+        <nav class="sidebar"></nav>
+      </header> -->
+
+      <div class="w-full bg-zinc-900">
+        <div class="parent relative top-0 left-0 w-full h-[700vh]">
+          <div class="sticky top-0 left-0 w-full h-screen">
+            <canvas class="w-full h-screen" id="frame"></canvas>
+          </div>
+        </div>
+      </div>
     </main>
+
     <script
       type="module"
       src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="./JS/main.js"></script>
   </body>
 </html>

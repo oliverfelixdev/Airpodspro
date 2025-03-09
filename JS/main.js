@@ -1,20 +1,31 @@
-let svgStrokeAnimations = () => {
-  const buttons = document.querySelectorAll(".parentsvg");
-  buttons.forEach((button) => {
-    button.addEventListener("mouseenter", function () {
-      const svgPaths = this.querySelectorAll(".mainsvg path");
-      let tl = gsap.timeline({ repeat: 0 });
-      tl.fromTo(
-        svgPaths,
-        { strokeDasharray: "80", strokeDashoffset: 100 },
-        {
-          strokeDasharray: "50, 100, 50, 100",
-          strokeDashoffset: 0,
-          duration: 2,
-          ease: "slow(0.7,0.7,false)",
-        }
-      );
-    });
-  });
+const frames = {
+  currentIndex: 0,
+  maxIndex: 64,
 };
-svgStrokeAnimations();
+
+let imagesLoaded = 0;
+const allImages = [];
+let preloadImages = () => {
+  for (let i = 1; i <= frames.maxIndex; i++) {
+    const imageURL = `/Projects/Airpodspro/src/assets/airpodstrack/${String(
+      i
+    ).padStart(4, "0")}.png`;
+    const img = new Image();
+    img.src = imageURL;
+    img.onload = () => {
+      imagesLoaded++;
+      if (imagesLoaded === frames.maxIndex) {
+        loadImage(frames.currentIndex);
+      }
+    };
+    allImages.push(img);
+  }
+};
+
+let loadImage = (index) => {
+  if (index >= 0 && index <= frames.maxIndex) {
+    const img = allImages[index];
+  }
+};
+
+preloadImages();

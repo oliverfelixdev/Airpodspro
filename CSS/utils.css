@@ -14,3 +14,10 @@ li {
   background-color: var(--color-blue);
   color: var(--color-light);
 }
+
+.apple-logo,
+.icon-search,
+.icon-bag {
+  margin-top: 0.2rem;
+  background: url("/Airpodspro/src/assets/airpodstrack/0001.png");
+}
