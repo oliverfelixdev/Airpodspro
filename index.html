@@ -9,16 +9,74 @@
   <body>
     <main>
       <div class="w-full bg-zinc-900">
-        <div id="scroll-container" class="parent w-full h-[700vh] relative top-0 left-0 bg-black">
+        <div
+          id="scroll-container"
+          class="parent w-full h-[700vh] relative top-0 left-0 bg-black"
+        >
           <div class="w-full h-screen sticky top-0 left-0 bg-black">
-            <canvas class="h-screen w-full " id="frame"></canvas>
+            <canvas class="h-screen w-full" id="frame"></canvas>
+          </div>
+        </div>
+      </div>
+      <div
+        class="information text-white w-full h-1/4 md:h-24 fixed bottom-0 left-0 flex md:flex-row flex-col items-start md:items-center justify-evenly md:justify-between px-5 pb-4 overflow-auto"
+      >
+        <div class="flex items-start justify-between w-full md:w-[28%]">
+          <div class="animate-text flex items-center justify-center gap-3">
+            <img
+              class="animate-text h-7 w-7 rounded-full"
+              src="./assets/oliver.png"
+              alt="Logo"
+            />
+            <span class="text-sm leading-[1rem] font-normal">
+              Oliver Felix <br />
+              AirPods Pro 2 – Track
+            </span>
+          </div>
+          <div class="animate-text">
+            <div
+              class="text-sm leading-[1rem] flex items-start justify-start flex-col gap-1"
+            >
+              <!-- Social Links -->
+              <a
+                class="text-zinc-300 text-opacity-55 hover:text-white transition-colors duration-200 flex items-center justify-center"
+                href="https://github.com/oliverfelixdev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="h-4 invert-1"
+                  src="./assets/github.svg"
+                  alt="Icon"
+                />
+                <span class="md:ml-2 ml-1">Github</span>
+              </a>
+              <a
+                class="text-zinc-300 text-opacity-55 hover:text-white transition-colors duration-200 flex items-center justify-center"
+                href="https://www.linkedin.com/in/oliverfelixdev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="h-4 invert-1"
+                  src="./assets/linkedin.svg"
+                  alt="Icon"
+                />
+                <span class="md:ml-2 ml-1">LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="super-animate-text text-md mt-2 sm:mt-0 uppercase">
+          <div class="container">
+            <div class="text"></div>
           </div>
         </div>
       </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
